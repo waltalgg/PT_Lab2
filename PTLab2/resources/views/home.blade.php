@@ -6,9 +6,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Главная</title>
 </head>
 <body>
-<h1>Привет!</h1>
+<div style="margin-left: 20%; margin-top: 5%;">
+    <h2>Магазин алкогольной продукции: <a href="/review">Перейти</a></h2>
+</div>
+
 </body>
 </html>
