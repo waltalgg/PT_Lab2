@@ -32,10 +32,6 @@ class MainController extends Controller
                 if ($existingItem)
                 {
                     $totalCount = ContactModel::where('name', ucfirst($item))->sum('count');
-                    if ($totalCount >= 10)
-                    {
-                        continue;
-                    }
                     $diff = min(10 - $totalCount, $count);
                     $existingItem->count += $diff;
                     $existingItem->save();
@@ -50,7 +46,6 @@ class MainController extends Controller
             }
         }
 
-        // После сохранения перенаправляем пользователя обратно на страницу просмотра товаров
         return redirect('/review');
     }
 
